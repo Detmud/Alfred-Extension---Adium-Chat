@@ -22,8 +22,13 @@ that will send the text “thinking of you :)” to your contact “fluffy” us
 
 ## Versionhistory
 
+### 2.0 by Sebatian Hansack
+- Deleting Growl Notifications
+- New Chats now open in new Tabs
+- Focus is set automatically
+
 ### 1.1 by Sebastian Hansack
-- Adding Growl Notification instead of a 
+- Adding Growl Notification
 
 ### 1.0 by Uris Ducats
 - Initial Version
