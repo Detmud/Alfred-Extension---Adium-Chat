@@ -38,8 +38,6 @@ on alfred_script(q)
 				else
 					tell account of user to (make new chat with contacts {user} with new chat window)
 				end if
-				tell (first chat whose contacts contains user) to become active
-				tell (first chat whose contacts contains user) to activate
 			else
 				set existing_window to first chat window
 				if (length of msg is greater than 0 and user is not equal to msg) then
@@ -48,16 +46,14 @@ on alfred_script(q)
 				else
 					tell account of user to (make new chat with contacts {user} in window existing_window)
 				end if
-				tell (first chat whose contacts contains user) to become active
-				tell (first chat whose contacts contains user) to activate
 			end if
 		else
 			if (length of msg is greater than 0 and user is not equal to msg) then
 				send (first chat whose contacts contains user) message msg
 			end if
-			tell (first chat whose contacts contains user) to become active
-			tell (first chat whose contacts contains user) to activate
 		end if
+		tell (first chat whose contacts contains user) to become active
+		tell (first chat whose contacts contains user) to activate
 	end tell
 
 end alfred_script
