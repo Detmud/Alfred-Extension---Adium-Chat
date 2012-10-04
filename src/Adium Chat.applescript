@@ -1,4 +1,4 @@
-#ver 2.0
+#ver 2.0.1
 on alfred_script(q)
 
 	set input to "" & q
