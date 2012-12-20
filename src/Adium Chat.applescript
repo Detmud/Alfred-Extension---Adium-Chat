@@ -28,7 +28,7 @@ on alfred_script(q)
 	end if
 
 	tell application "Adium"
-		set user to first contact whose (display name contains user)
+		set user to first contact whose (display name contains user or name contains user)
 
 		if not (exists (chats whose contacts contains user)) then
 			if not (exists (first chat window)) then
